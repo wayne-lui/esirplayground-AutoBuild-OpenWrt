@@ -48,7 +48,7 @@ jobs:
         cd openwrt
         echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
         echo "src-git lienol https://github.com/Lienol/openwrt-package" >> ./feeds.conf.default
-        echo "src-git stangri https://cdn.jsdelivr.net/gh/stangri/source.openwrt.melmac.net"  >> ./feeds.conf.default
+        echo "src-git stangri https://github.com/stangri/source.openwrt.melmac.net.git"  >> ./feeds.conf.default
          
     - name: Update & Install feeds
       working-directory: ./openwrt
