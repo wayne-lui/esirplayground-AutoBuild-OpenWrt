@@ -48,7 +48,8 @@ jobs:
         cd openwrt
         echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
         echo "src-git lienol https://github.com/Lienol/openwrt-package" >> ./feeds.conf.default
-        
+        echo "src-git stangri https://github.com/stangri/luci-app-advanced-reboot"  >> ./feeds.conf.default
+         
     - name: Update & Install feeds
       working-directory: ./openwrt
       run: |
